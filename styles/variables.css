@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --interVariable: "Inter-Variable", sans-serif;
+    --pressStart: PressStart2P-Regular, sans-serif;
+    --colorButtonText: #fff;
+
+    --cardTextFont: 400;
+    --cardHeaderFont: 700;
+    --cardBackgroundColor: #fff;
+    --cardAccentColor: #000;
+    --backgroundGradient: repeating-linear-gradient(
+            to right,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --markerColor: grey;
+    --heartConturColor: #000;
+    --heartFillColor: #ff0000;
+}
