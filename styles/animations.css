@@ -12,3 +12,50 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(4px);
+    }
+}
+
+@keyframes scaleHeart {
+    from {
+        transform: scale(1);
+        transform-origin: center;
+    }
+    to {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
+
+@keyframes sparksDrop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fillHeart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fillCoreHeart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

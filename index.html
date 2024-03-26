@@ -13,28 +13,16 @@
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
   <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./svg/favicon.ico" sizes="any" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./svg/favicon.png" />
   <script src="./scripts/set-theme.js"></script>
 </head>
 
 <body class="page">
 
-  <dialog class="dialog" id="dialog-id">
-    <form class="dialog_form" method="dialog">
-      <div class="dialog_label">
-        <svg class="dialog_floppy">
-          <use href="svg/floppy.svg#floppy-2">
-        </svg>
-        <span class="dialog__text">Вставьте
-          дискету, чтобы продолжить</span>
-      </div>
-      <button type="submit" class=" dialog__button" onclick="window['dialog-id'].showModal();"
-        aria-controls="dialog-id"><span class="dialog_button__text">OK</span></button>
-    </form>
-  </dialog>
-
   <header class="header section_position">
-    <h1 class="header__title">&lt;/HTML&gt;</h1>
-    <span class="header__sub_title">закрывающий тег</span>
+    <span class="header__title"><a class="header__title_link" href="#">&lt;/HTML&gt;</a></span>
+    <h1 class="header__sub_title">закрывающий тег</h1>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -56,7 +44,7 @@
       </ul>
     </nav>
   </header>
-  <main class="card-container section_position">
+  <main class="card-container section_position ">
     <article class="card">
       <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
       <div class="card__image_container">
@@ -64,11 +52,12 @@
         <img class="card__image" alt="Пиксельная машина на фоне ночного неба" src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и
-          настроиться на учёбу.
-          И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+        <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами
+          и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше
+          будущее.
+        </p>
         <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -97,12 +86,15 @@
           alt="Пиксельная машина на фоне ночного неба в фильтре сепия, тусклых оттенков" src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички.
-          Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за
-          этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не
+        <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают
+          новички.
+          Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска
+          бумаги. Часто за
+          этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно?
+          что, если я не
           справлюсь?</p>
         <p class="card__text">Место для ваших воспоминаний о начале первого спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -127,13 +119,16 @@
       <h2 class="card__title">1 спринт: А если не получится?</h2>
       <div class="card__image_container">
         <span class="card__label">&lt;CSS&gt;</span>
-        <img class="saturate card__image" alt="" src="./images/car_.png">
+        <img class="saturate card__image" alt="Пиксельная машина на фоне ночного неба в кислотных оттенках"
+          src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть
-          и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+        <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро
+          померкнуть
+          и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+        </p>
         <p class="card__text">Место для ваших воспоминаний об окончании первого спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -158,14 +153,17 @@
       <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
       <div class="card__image_container">
         <span class="card__label">&lt;desigions&gt;</span>
-        <img class="hue-rotate card__image" alt="" src="./images/car_.png">
+        <img class="hue-rotate card__image" alt="Пиксельная машина на фоне ночного неба в оранжевых оттенках"
+          src="./images/car_.png">
       </div>
-      <div class="card__text_container">
-        <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё
-          впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не
+      <div class="card__text_container margin">
+        <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как
+          много ещё
+          впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы
+          вовсе и не
           подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
         <p class="card__text">Место для ваших воспоминаний о начале второго спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container ">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -190,15 +188,19 @@
       <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
       <div class="card__image_container">
         <span class="card__label">care</span>
-        <img class="invert card__image" alt="" src="./images/car_.png">
+        <img class="invert card__image" alt="Пиксельная машина на фоне ночного неба в зеленых оттенках"
+          src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против
-          целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно
-          пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть
+        <p class="card__text">Всё это время вы были не одиноки(хотя, возможно, иногда ичувствовали, что одни
+          против
+          целого мира). Вас окружали одногруппники, командасопровождения и просто близкиелюди, которым
+          можно
+          пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче,
+          когда рядом есть
           единомышленники, не правда ли?</p>
         <p class="card__text">Место для ваших воспоминаний об окончании второго спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -222,14 +224,15 @@
     <article class="card">
       <h2 class="card__title">3 спринт: Обходные стратегии</h2>
       <div class="card__image_container">
-        <span class="card__label">&lt;/support&gt;</span>
-        <img class="sepia card__image" alt="" src="./images/car_.png">
+        <span class="card__label">&lt;support&gt;</span>
+        <img class="sepia card__image" alt="Пиксельная машина на фоне ночного неба в серых оттенках"
+          src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться,
-          что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+        <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло
+          показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
         <p class="card__text">Место для ваших воспоминаний о начале третьего спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -254,23 +257,25 @@
       <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
       <div class="card__image_container">
         <span class="card__label">&lt;lifes-style: none;&gt;</span>
-        <img class="blur card__image" alt="" src="./images/car_.png">
+        <img class="blur card__image" alt="Заблюренная пиксельная машина на фоне ночного неба" src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и
-          проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В
+        <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
+          Вроде и
+          проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь
+          не забыть пожить. В
           такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
         <p class="card__text">Место для ваших воспоминаний об окончании третьего спринта.</p>
-        <div class="card__button_container">
+        <div class="card__button_container margin">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
-              <g class="heart">
-                <path class="contour"
+              <g>
+                <path class="contour heart"
                   d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" />
-                <path class="main-body"
+                <path class="main-body heart"
                   d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" />
-                <path class="core"
+                <path class="core heart"
                   d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" />
               </g>
               <path class="sparks"
@@ -286,14 +291,28 @@
       <h2 class="card__title">«Сейчас я здесь»</h2>
       <div class="card__image_container">
         <span class="card__label">&lt;experience&gt;</span>
-        <img class="contrast card__image" alt="" src="./images/car_.png">
+        <img class="contrast card__image" alt="Пиксельная машина на фоне ночного неба в кислотных размытых оттенках"
+          src="./images/car_.png">
       </div>
       <div class="card__text_container">
-        <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё
-          много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый
-          мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам
+        <!-- <p class="card__text">Сейчас вы уже очень много знаете&nbsp; о вёрстке. Но это только начало.&nbsp; Во-первых,
+          впереди ещё
+          много&nbsp; материала про «красотищу». Во-&nbsp;вторых, с окончанием курса учёба&nbsp; не заканчивается.
+          Вёрстка — это&nbsp; целый
+          мир. И этот мир постоянно&nbsp; меняется. Познать его полностью&nbsp; не получится, но это тот случай,&nbsp;
+          когда важен сам
+          процесс познания.&nbsp; Ведь часто путь — и есть&nbsp; результат.</p>
+        <p class="card__text">Место, чтобы остановиться,&nbsp; подумать и написать, что вы&nbsp;чувствуете в этой точке
+          пути.</p> -->
+        <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых,
+          впереди ещё
+          много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается.
+          Вёрстка — это целый
+          мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай,
+          когда важен сам
           процесс познания. Ведь часто путь — и есть результат.</p>
-        <p class="card__text">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+        <p class="card__text">Место, чтобы остановиться, подумать и написать, что вычувствуете в этой точке
+          пути.</p>
         <div class="card__button_container">
           <button class="card__icon-button" type="button">
             <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="currentColor"
@@ -318,12 +337,26 @@
     <button class="page__save_button" type="button" onclick="window['dialog-id'].showModal();"
       aria-controls="dialog-id">
       <svg class="floppy_icon" viewBox="0 0 21 21">
-        <use href="svg/floppy.svg#floppy-2">
+        <use href="svg/floppy.svg#floppy-2" />
       </svg>
-      <span class="button__text">Сохранить на память</span>
+      <span class="button__text">Сохранить на&nbsp;память</span>
     </button>
 
   </main>
+
+  <dialog class="dialog" id="dialog-id">
+    <form class="dialog_form" method="dialog">
+      <div class="dialog_label">
+        <svg class="dialog_floppy">
+          <use href="svg/floppy.svg#floppy-2" />
+        </svg>
+        <span class="dialog__text">Вставьте
+          дискету, чтобы продолжить</span>
+      </div>
+      <button type="submit" class="dialog__button" aria-controls="dialog-id"><span
+          class="dialog_button__text">OK</span></button>
+    </form>
+  </dialog>
   <script src="./scripts/like.js"></script>
 </body>
 
