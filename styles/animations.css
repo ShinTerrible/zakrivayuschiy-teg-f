@@ -13,6 +13,98 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+/* LIKE ICON CONDITIONS */
+
+.card__icon-button:focus {
+    outline: none;
+}
+
+.card__icon-button:focus-visible {
+    border: 2px solid var(--cardAccentColor);
+    padding: 0;
+    block-size: 38px;
+    transition: border 0.3s ease;
+}
+
+.like-icon:hover {
+    cursor: pointer;
+}
+
+.contour {
+    fill: var(--heartConturColor);
+    transition: fill 0.1s;
+}
+
+.is-liked .contour {
+    fill: var(--heartFillColor);
+    transition: fill 0.3s 0.06s;
+}
+
+.main-body {
+    fill: var(--heartConturColor);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.like-icon:hover .main-body {
+    opacity: 1;
+    transition: opacity 0.3s 0.05s;
+}
+
+.like-icon:active .main-body {
+    fill: var(--heartFillColor);
+    transition: fill 0.3s 0.05s;
+}
+
+.is-liked .main-body {
+    fill: var(--heartFillColor);
+    transition: fill 0.3s 0.05s;
+}
+
+.core {
+    fill: var(--heartConturColor);
+    opacity: 0;
+    transition: opacity 0.3s 0.03s;
+}
+
+.like-icon:hover .core {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.like-icon:active .core {
+    fill: var(--heartFillColor);
+    transition: fill 0.3s 0.05s;
+}
+
+.is-liked .core {
+    fill: var(--heartFillColor);
+    transition: fill 0.3s 0.03s;
+}
+
+.sparks {
+    fill: var(--heartFillColor);
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .is-liked .heart .main-body {
+        animation: fillHeart 0.3s 0.01s ease-in forwards;
+    }
+
+    .is-liked .heart .core {
+        animation: fillCoreHeart 0.3s 0.01s ease-in forwards;
+    }
+
+    .is-liked .sparks {
+        animation: sparksDrop 0.3s 0.3s ease-in normal;
+    }
+
+    .is-liked .heart {
+        animation: scaleHeart 0.3s 0.01s ease-in normal;
+    }
+}
+
 @keyframes moving {
     from {
         transform: translateX(0);
