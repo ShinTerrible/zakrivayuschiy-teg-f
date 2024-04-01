@@ -85,6 +85,10 @@ html {
     padding-inline-start: 15px;
 }
 
+.theme-menu__list:focus-visible {
+    outline: none;
+}
+
 .theme-menu__item {
     margin: 0;
     padding-inline-start: 5px;
@@ -107,14 +111,6 @@ html {
     position: relative;
     pointer-events: none;
     padding-block-start: 4px;
-}
-
-.theme-menu__item:has(:disabled)::marker {
-    content: "▶";
-    position: absolute;
-    color: var(--markerColor);
-    transform: translate(-10%);
-    animation: moving 0.8s infinite ease-in-out;
 }
 
 .theme-menu__item:has(.theme-menu__button:disabled) {
@@ -212,9 +208,10 @@ html {
     font-weight: 400;
     line-height: 14px;
     text-align: left;
-    text-shadow: -01px 0 var(--cardBackgroundColor),
-        0 01px var(--cardBackgroundColor), 01px 0 var(--cardBackgroundColor),
-        0 -01px var(--cardBackgroundColor);
+    text-shadow: -1px 0 var(--cardBackgroundColor),
+        0 1px var(--cardBackgroundColor), 1px 0 var(--cardBackgroundColor),
+        0 -1px var(--cardBackgroundColor);
+    mix-blend-mode: hard-light;
     color: var(--cardAccentColor);
     z-index: 2;
 }
